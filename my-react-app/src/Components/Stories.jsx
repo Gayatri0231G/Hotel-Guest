@@ -2,7 +2,7 @@ import React from "react";
 import "./stories.css";
 import { IoIosTabletPortrait } from "react-icons/io";
 import { FaBookmark, FaChevronRight } from "react-icons/fa";
-import { FaHome, FaKey, FaBed, FaConciergeBell } from "react-icons/fa"; 
+import { FaUser, FaPills, FaHome, FaGift, FaSearch, FaKey, FaBed, FaConciergeBell } from "react-icons/fa";
 
 const Stories = () => {
   return (
@@ -128,7 +128,25 @@ const Stories = () => {
             They will turn into special offers for you.
           </div>
         </div>
+        <div className="bottom-nav">
+      <div className="nav-item active">
+        <FaUser />
       </div>
+      <div className="nav-item1">
+        <FaPills />
+      </div>
+      <div className="nav-item1">
+        <FaHome />
+      </div>
+      <div className="nav-item1">
+        <FaGift />
+      </div>
+      <div className="nav-item1">
+        <FaSearch />
+      </div>
+    </div>
+      </div>
+     
     </div>
   );
 };
