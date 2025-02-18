@@ -2,7 +2,8 @@ import React from "react";
 import "./stories.css";
 import { IoIosTabletPortrait } from "react-icons/io";
 import { FaBookmark, FaChevronRight } from "react-icons/fa";
-import { FaLock, FaConciergeBell, FaKey, FaHotel, } from "react-icons/fa";
+import { FaHome, FaKey, FaBed, FaConciergeBell } from "react-icons/fa"; 
+// import { FaLock, FaConciergeBell, FaKey, FaHotel, } from "react-icons/fa";
 
 const Stories = () => {
   return (
@@ -85,7 +86,7 @@ const Stories = () => {
         </div>
       </div>
 
-      <div className="section">
+      {/* <div className="section">
         <h4>All services</h4>
         <div className="service">
           <FaHotel className="icon" />
@@ -103,11 +104,57 @@ const Stories = () => {
           <FaConciergeBell className="icon" />
           <p>Order Room Service</p>
         </div>
-      </div>
+      </div> */}
 
-      <div className="points">
+      {/* <div className="points">
         <p>06 points</p>
         <p>Accumulate points with your stay. They will turn into special offers for you.</p>
+      </div> */}
+      <div className="all-services">
+        <h3 className="section-title">All services</h3>
+
+        <div className="services-container">
+          <div className="service-box">
+            <div className="service-left">
+              <FaHome className="service-icon" />
+              <span className="service-text">Facilities</span>
+            </div>
+            <span className="service-arrow">→</span>
+          </div>
+
+          <div className="service-box">
+            <div className="service-left">
+              <FaKey className="service-icon" />
+              <span className="service-text">Virtual Key</span>
+            </div>
+            <span className="service-arrow">→</span>
+          </div>
+
+          <div className="service-box">
+            <div className="service-left">
+              <FaBed className="service-icon" />
+              <span className="service-text">My Room</span>
+            </div>
+            <span className="service-arrow">→</span>
+          </div>
+
+          <div className="service-box">
+            <div className="service-left">
+              <FaConciergeBell className="service-icon" />
+              <span className="service-text">Order Room Service</span>
+            </div>
+            <span className="service-arrow">→</span>
+          </div>
+        </div>
+
+        {/* Points Section */}
+        <div className="points-container">
+          <div className="points-number">06 <span>points</span></div>
+          <div className="points-text">
+            Accumulate points with your stay. <br />
+            They will turn into special offers for you.
+          </div>
+        </div>
       </div>
     </div>
   );
